@@ -17,10 +17,11 @@ public class EratosthenesSieve {
 
         int opsCount = 0;
         for (int i = 2; i * i < count; i++) {
-
-            for (int j = i * i; j < count; j += i) {
-                isPrime[j] = false;
-                opsCount += 1;
+            if (isPrime[i]) {
+                for (int j = i * i; j < count; j += i) {
+                    isPrime[j] = false;
+                    opsCount += 1;
+                }
             }
         }
         System.out.println("OPERATIONS COUNT = " + opsCount);
