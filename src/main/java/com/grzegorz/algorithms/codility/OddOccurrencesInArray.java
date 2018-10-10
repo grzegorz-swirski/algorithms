@@ -6,26 +6,18 @@ import java.util.Arrays;
 class OddOccurrencesInArray {
 
     public int solution(int a[]) {
-
         Arrays.sort(a);
 
-        int prev = a[0];
-        int count = 1;
-
-        for (int i = 1; i < a.length; i++) {
-            int cur = a[i];
-            if (cur != prev) {
-                if (count % 2 != 0) {
-                    return prev;
-                } else {
-                    count = 1;
-                }
-            } else {
-                count += 1;
+        for (int i = 0; i < a.length; i += 2) {
+            if (i == a.length - 1) {
+                return a[i];
             }
-            prev = cur;
+
+            if (a[i] != a[i + 1]) {
+                return a[i];
+            }
         }
 
-        return prev;
+        return -1;
     }
 }
