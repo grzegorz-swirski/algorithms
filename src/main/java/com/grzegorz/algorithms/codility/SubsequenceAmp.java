@@ -12,7 +12,7 @@ public class SubsequenceAmp {
         Arrays.sort(a);
         System.out.println(Arrays.toString(a));
 
-        int maxQuasiConstSeq = 0;
+        int maxQuasiConstSeq = 1;
         int currentQuasiConstSeq = 1;
         int amp = a[0];
         for (int i = 1; i < len; i++) {

@@ -46,4 +46,13 @@ public class OnesCountTest {
 
         assertEquals(8, result);
     }
+
+    @Test
+    public void test5() throws Exception {
+        int a = 123;
+        int b = 0;
+        int result = s.solution(a, b);
+
+        assertEquals(0, result);
+    }
 }

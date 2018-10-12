@@ -26,10 +26,10 @@ public class CountingExercise {
 
     // TODO: move to utils class
     public static int[] count(int[] numbers, int maxValue) {
-        int[] result = new int[maxValue + 1];
+        int[] count = new int[maxValue + 1];
         for (int i = 0; i < numbers.length; i++) {
-            result[numbers[i]] += 1;
+            count[numbers[i]] += 1;
         }
-        return result;
+        return count;
     }
 }
