@@ -24,7 +24,8 @@ public class CountingExercise {
         return false;
     }
 
-    public int[] count(int[] numbers, int maxValue) {
+    // TODO: move to utils class
+    public static int[] count(int[] numbers, int maxValue) {
         int[] result = new int[maxValue + 1];
         for (int i = 0; i < numbers.length; i++) {
             result[numbers[i]] += 1;
