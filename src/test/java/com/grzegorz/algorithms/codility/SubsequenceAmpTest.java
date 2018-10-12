@@ -6,7 +6,8 @@ import static junit.framework.Assert.assertEquals;
 
 public class SubsequenceAmpTest {
 
-    SubsequenceAmp s = new SubsequenceAmp();
+//    SubsequenceAmp s = new SubsequenceAmp();
+    SubsequenceAmpMap s = new SubsequenceAmpMap();
 
     @Test
     public void testEmpty() throws Exception {
