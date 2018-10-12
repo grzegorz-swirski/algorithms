@@ -1,4 +1,4 @@
 package com.grzegorz.algorithms.codility;
 
-public class SolutionTest {
+public class Solution {
 }
