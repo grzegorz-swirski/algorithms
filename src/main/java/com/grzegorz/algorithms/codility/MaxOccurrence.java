@@ -10,12 +10,12 @@ public class MaxOccurrence {
         int index = 0;
         for (int i = 0; i < N; i++) {
             if (count[A[i]] > 0) {
+                count[A[i]] += 1;
                 int tmp = count[A[i]];
                 if (tmp > maxOccurence) {
                     maxOccurence = tmp;
                     index = i;
                 }
-                count[A[i]] = tmp + 1;
             } else {
                 count[A[i]] = 1;
             }
