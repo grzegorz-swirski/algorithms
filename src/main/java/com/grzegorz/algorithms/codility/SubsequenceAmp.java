@@ -15,6 +15,8 @@ public class SubsequenceAmp {
         int maxQuasiConstSeq = 1;
         int currentQuasiConstSeq = 1;
         int amp = a[0];
+        int stepIdx = 0;
+
         for (int i = 1; i < len; i++) {
             if (a[i] - amp <= 1) {
                 currentQuasiConstSeq += 1;
@@ -22,8 +24,12 @@ public class SubsequenceAmp {
                     maxQuasiConstSeq = currentQuasiConstSeq;
                 }
             } else {
-                amp = a[i];
-                currentQuasiConstSeq = 1;
+                amp = a[stepIdx];
+                currentQuasiConstSeq = i - stepIdx + 1;
+            }
+
+            if (a[i - 1] < a[i]) {
+                stepIdx = i;
             }
         }
 

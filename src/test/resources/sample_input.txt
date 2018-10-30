@@ -1,0 +1,5 @@
+The tutorial starts by asking what is a path? Then, the Path class, the primary entry point for the package, is
+introduced. Methods in the Path class relating to syntactic operations are explained. The tutorial then moves on to
+the other primary class in the package, the Files class, which contains methods that deal with file operations. First,
+some concepts common to many file operations are introduced. The tutorial then covers methods for checking, deleting,
+copying, and moving files.
